@@ -10,7 +10,7 @@ can happen to you is feedback.
 
 This document is here to help you in your preparation of your talk. Please
 note that it is for everyone. Because we have experienced and beginner
-speakers, the document is devided in sections.
+speakers, the document is divided in sections.
 
 * [Must-knows](1-must.md): The must read. It holds all the technical
   information and some particularities about our conference.

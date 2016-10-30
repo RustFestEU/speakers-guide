@@ -41,8 +41,8 @@ Introduce yourself to the stage host and the master of ceremonies (MC). The
 host will take care of of timing, notify you when to prepare to go on stage and
 is your first point of contact. The master of ceremonies will introduce you on
 stage. Give the MC the most important facts needed for announcing you (what's
-your topic, the proper pronounciation of your name and your pronouns). If you
-have any nice anectote you like being told as an introduction, say it! MCs work
+your topic, the proper pronunciation of your name and your pronouns). If you
+have any nice anecdote you like being told as an introduction, say it! MCs work
 with jokes, so maybe figure out something together!
 
 If you have never given a talk before, here's a short run down of the process:
@@ -78,7 +78,7 @@ Also, care about your water intake in the hours before the talk, stage thirst
 is worse then stage fright. Avoid acidic drinks.
 
 I usually pick the shirt I wear for the day specifically for the talk and bring
-that in a seperate bag. Right before the talk starts, I go to the bathroom, get
+that in a separate bag. Right before the talk starts, I go to the bathroom, get
 a bit of fresh water in my face and change. This is a ritual that works for me
 and makes me feel better and calmer right away.
 
@@ -162,7 +162,7 @@ The introduction serves to establish your background and how you relate to the
 problem. For example, if you are not a developer but instead a user of the
 software you present, say so. Don't turn this into navel-gazing. If you have
 previous works and large projects of unrelated kinds, cut any mention of them
-short. Also make sure you mention Twitter and Github accounts briefly if you
+short. Also make sure you mention Twitter and GitHub accounts briefly if you
 want people to find you.
 
 The next three topics merit about equal sizes of the rest of your talk. All
@@ -194,7 +194,7 @@ For that reason, if you feel like your talk is still missing something, it's
 probably not memes and jokes. Get back to the construction part. If you think
 your talk works well with a rather usual delivery, you may come back here.
 
-The most important part of delivery is connecting the dots you layed out for
+The most important part of delivery is connecting the dots you laid out for
 you in a fashion understandable to the listener. If something is based on
 something that came before, refer back to it verbally ("Remember that our
 problem was connecting point A to point B through C?"). If you have a key point,
@@ -231,7 +231,7 @@ Finally, swearing and curse-words. While we don't put any rules on their usage,
 please consider that some people find them off-putting. They might still fit
 your persona. Still, there lurks a danger here: if you can only make your point
 by using curse language, how strong is your point? Making strong statements
-without resorting to those tricks makes your statements more rememberable. Also
+without resorting to those tricks makes your statements more memorable. Also
 remember that cursing, especially about other peoples words, can quickly be
 disrespectful.
 
