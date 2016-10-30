@@ -7,7 +7,7 @@ feel like you are being inappropriate, there are a lot of speech patterns that
 use disability-related terms and language in a negative way.
 
 Given that we openly care about these people by putting our
-[Accessiblity Statement](http://www.rustfest.eu/accessibility/) out, we also
+[Accessibility Statement](http://www.rustfest.eu/accessibility/) out, we also
 (willfully) open ourselves to that critique. That extends to you, as you are
 the most public-facing part of the conference.
 
