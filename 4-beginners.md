@@ -3,8 +3,8 @@
 RustFest is a community conference with many new people around, which means
 that speaking about your experiences with the language and your reasons behind
 using it trumps fine technical detail. It is a technical conference, still, so
-your talk should definitely contain code where appropriate and explain it well.
-Also, if your project uses a clever trick or unusual pattern that, do - by all
+your talk can most definitely contain code where appropriate and explain it well.
+Also, if your project uses a clever trick or unusual pattern then, do - by all
 means - show it and explain it, even at the danger that some of the audience
 might not fully follow. Just ensure that your talk is not completely packed
 with those things - you are speaking to show, not to show off. Given our
