@@ -60,7 +60,7 @@ or Friedrichsstraße.
 Note that walking around the street at night is safe, especially in the middle
 of town where you are going to stay. If you feel unsafe in cities, sticking in
 a group together with a local is still recommendable. Feel free to ask team
-members or local community members if the have time to spend the evening with
+members or local community members if they have time to spend the evening with
 you.
 
 Public transportation is safe and frequently used at night by everyone. Berlin
