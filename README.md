@@ -14,16 +14,16 @@ Start at [0-speakers_guide.md](0-speakers_guide.md).
 The original version of this guide was written by
 [Florian](https://twitter.com/Argorak) for RustFest 2016.
 
-[Katharina](https://twitter.com/_katsel) wrote large parts of the
+[Katharina](https://twitter.com/katheyrina) wrote large parts of the
 [section on ableist language](3-ableism.md) and provided feedback and
 additions to the original version.
 
-[charlotte](https://twitter.com/charlotteis) provided feedback and additions
+[James](https://twitter.com/varjmes) provided feedback and additions
 to the original version.
 
 ## Contributing
 
-Feel free to submit a pull request if you have corrections or improvements.
+Feel free to submit a pull request if you have corrections, additions or improvements.
 
 ## License
 
