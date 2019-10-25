@@ -1,4 +1,4 @@
-# RustFest 2016 Speakers Guide
+# RustFest Speakers Guide
 
 ## About this repo
 
@@ -27,7 +27,7 @@ Feel free to submit a pull request if you have corrections, additions or improve
 
 ## License
 
-RustFest 2016 Speakers Guide by RustFest 2016 Team is licensed under the
+RustFest Speakers Guide by the RustFest Team is licensed under the
 [Creative Commons Zero
 License](http://creativecommons.org/publicdomain/zero/1.0/).
 It is public domain, no credit and no open licensing of your version are
@@ -36,7 +36,7 @@ required.
 If you would like to optionally attribute it, you could use the below text and
 link to https://github.com/RustFestEU/speakers-guide:
 
-> This speakers guide is based on the [RustFest 2016 speakers
+> This speakers guide is based on the [RustFest speakers
   guide](https://github.com/RustFestEU/speakers-guide).
 
 <hr />
