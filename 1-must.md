@@ -2,8 +2,8 @@
 
 ## Send your travel info
 
-If you want to be picked up at the airport, please send us your travel details
-as soon as possible.
+If you need help upon arriving in the city, e.g. getting picked up from the airport or train station,
+please send us your travel details as soon as possible.
 
 ## Upload your slides
 

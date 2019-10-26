@@ -9,8 +9,8 @@ RustFest is a community conference about the Rust programming language, which
 is relatively young, but has gathered some attention. It has especially found a
 way to engage new people in systems programming. Assume the audience to be a
 mix of experienced systems programmers and fresh people and try to cater to
-both. We also hope for a rather diverse audience and Berlin tech communities
-tend to take diversity seriously. (more on that later)
+both. We also hope for a rather diverse audience and the tech communities we interact with
+tend to take diversity seriously (more on that later).
 
 Be aware that many attendees will have an acceptable level of English skills,
 but will not have English as a first language. Thus you may consider avoiding

@@ -17,9 +17,10 @@ Constructing your talk as a series of arguments for your solution with one
 based on the other is definitely a good way to go! Make your central statements
 clearly visible!
 
-All talks at RustFest (except keynotes) will be 30-40 minutes talks or
-alternatively 25-35 minutes with questions and answers. You can select that
-yourself, even spontaneously. Please notify the current stage host before.
+All talks at RustFest (except keynotes) will be 15-30 minutes talks or
+alternatively 10-25 minutes with questions and answers.
+Please check the time slot assigned to you and let the team know as soon as possible
+if there are changes required.
 
 We have a packed program, please try not to overrun.
 
@@ -235,7 +236,7 @@ without resorting to those tricks makes your statements more memorable. Also
 remember that cursing, especially about other peoples words, can quickly be
 disrespectful.
 
-In my experience from 5 years of running conferences, the clearly-stated,
+In my experience from over 5 years of running conferences, the clearly-stated,
 well-constructed, well-spoken talks with a good measure of warmth and humor are
 the most remembered. Of the others, I remember only the jokes.
 
