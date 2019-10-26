@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Must Knows - RustFest Speakers Guide</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The RustFest Speakers Guide - all you need to know if you speak at RustFest">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="0-speakers_guide.html"><strong aria-hidden="true">1.</strong> Speakers Guide</a></li><li><a href="1-must.html" class="active"><strong aria-hidden="true">2.</strong> Must Knows</a></li><li><a href="2-audience.html"><strong aria-hidden="true">3.</strong> Audience</a></li><li><a href="3-ableism.html"><strong aria-hidden="true">4.</strong> Ableism in talks</a></li><li><a href="4-beginners.html"><strong aria-hidden="true">5.</strong> Beginners</a></li><li><a href="5-schedule.html"><strong aria-hidden="true">6.</strong> Schedule</a></li><li><a href="6-travel.html"><strong aria-hidden="true">7.</strong> Travel</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">RustFest Speakers Guide</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                            <a href="https://github.com/RustFestEU/speakers-guide" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#must-knows" id="must-knows">Must-knows</a></h1>
+<h2><a class="header" href="#send-your-travel-info" id="send-your-travel-info">Send your travel info</a></h2>
+<p>If you need help upon arriving in the city, e.g. getting picked up from the airport or train station,
+please send us your travel details as soon as possible.</p>
+<h2><a class="header" href="#upload-your-slides" id="upload-your-slides">Upload your slides</a></h2>
+<p>&lt;<em>RustFest had a person with vision impairments attending. Therefore we asked
+our speakers to provide their slides (or some drafts at least) 2-3 weeks before
+the conference, as it takes some time and work to make them accessible to that
+person.</em>&gt;</p>
+<p>Also, please prefer uploading a draft soon (possibly now), even if it doesn't
+have all content or just a beginning. It helps catching problems when
+converting your slides early on! Please try to have something in that folder by
+Sunday, &lt;<em>1 week before the conference</em>&gt;, latest.</p>
+<p>Because of this, please read the section on <a href="#Giving%20accessible%20talks">accessible talks on the
+conference</a>,
+and try to act by it.</p>
+<p>Please note that our <a href="http://www.rustfest.eu/code-of-conduct/">Code of Conduct</a>
+applies to slide material and talk content.</p>
+<h2><a class="header" href="#technology" id="technology">Technology</a></h2>
+<p>&lt;<em>General information about the screen and mic setup, planned licenses for
+publication, and talk transcription (if applicable).</em>&gt;</p>
+<h2><a class="header" href="#things-to-do-before-the-talk" id="things-to-do-before-the-talk">Things to do before the talk</a></h2>
+<p>Please try to be on time so that we can arrange a technology check.</p>
+<p>Please meet our master of ceremonies before the talk section to make sure they
+have something nice to say about you. Maybe come up with something yourself,
+something about an area of interest or a little personal story you are
+comfortable with someone telling on stage.</p>
+<p>If all this is new to you, refer to the relevant part in the beginners section.</p>
+<h2><a class="header" href="#giving-accessible-talks" id="giving-accessible-talks">Giving accessible talks</a></h2>
+<p>Everyone should be able to follow your talks, so here's a few guidelines. It's
+not even much you have to do <em>and</em> it improves your talk for everyone.</p>
+<p>First of all, you probably have an accent, even if you don't realise. For that
+reason, try to speak slow, clearly and loud. Make an effort not to be too fast.</p>
+<p>Make sure you don't cover your mouth on stage. People with hearing impairments
+will thank you.</p>
+<p>Second, explain anything that is on your slides, even in their spatial
+relationship. (&quot;To the left, you see A, down at the bottom, there's B and their
+relationship is a road over point C&quot;)</p>
+<p>This is especially important for people with any kind of visual impairments.</p>
+<p>Please don't make trivial jokes like &quot;let's say something really hard just to
+have her cope with that&quot; with the transcription interpreter. This has sadly
+been an issue before. Interaction with her is fine, though, keep it sincere!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="0-speakers_guide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="2-audience.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="0-speakers_guide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="2-audience.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

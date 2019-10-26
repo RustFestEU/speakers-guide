@@ -1,0 +1,13 @@
+[book]
+title = "RustFest Speakers Guide"
+description = "The RustFest Speakers Guide - all you need to know if you speak at RustFest"
+authors = ["RustFest Team"]
+language = "en"
+src = "."
+
+[output.html]
+git-repository-url = "https://github.com/RustFestEU/speakers-guide"
+
+[build]
+build-dir = "docs"
+create-missing = false

@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Beginners - RustFest Speakers Guide</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The RustFest Speakers Guide - all you need to know if you speak at RustFest">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="0-speakers_guide.html"><strong aria-hidden="true">1.</strong> Speakers Guide</a></li><li><a href="1-must.html"><strong aria-hidden="true">2.</strong> Must Knows</a></li><li><a href="2-audience.html"><strong aria-hidden="true">3.</strong> Audience</a></li><li><a href="3-ableism.html"><strong aria-hidden="true">4.</strong> Ableism in talks</a></li><li><a href="4-beginners.html" class="active"><strong aria-hidden="true">5.</strong> Beginners</a></li><li><a href="5-schedule.html"><strong aria-hidden="true">6.</strong> Schedule</a></li><li><a href="6-travel.html"><strong aria-hidden="true">7.</strong> Travel</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">RustFest Speakers Guide</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                            <a href="https://github.com/RustFestEU/speakers-guide" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2><a class="header" href="#subject-matter-style-of-talks" id="subject-matter-style-of-talks">Subject matter, style of talks</a></h2>
+<p>RustFest is a community conference with many new people around, which means
+that speaking about your experiences with the language and your reasons behind
+using it trumps fine technical detail. It is a technical conference, still, so
+your talk can most definitely contain code where appropriate and explain it well.
+Also, if your project uses a clever trick or unusual pattern then, do - by all
+means - show it and explain it, even at the danger that some of the audience
+might not fully follow. Just ensure that your talk is not completely packed
+with those things - you are speaking to show, not to show off. Given our
+standard talk length, probably 1-2 of those examples are enough, with ample
+time for explanation. This obviously doesn't apply if your talk isn't a
+technical talk.</p>
+<p>The Rust community likes arguing and writing about things in a peaceful manner.
+Constructing your talk as a series of arguments for your solution with one
+based on the other is definitely a good way to go! Make your central statements
+clearly visible!</p>
+<p>All talks at RustFest (except keynotes) will be 15-30 minutes talks or
+alternatively 10-25 minutes with questions and answers.
+Please check the time slot assigned to you and let the team know as soon as possible
+if there are changes required.</p>
+<p>We have a packed program, please try not to overrun.</p>
+<h2><a class="header" href="#a-day-at-the-conferences" id="a-day-at-the-conferences">A day at the conferences</a></h2>
+<p>A day at the conference can be a little bit stressful, so be prepared on what
+to expect. As with all other attendees, all organisers are there for you the
+whole weekend. Please don't keep your questions to yourself, ask for help.</p>
+<p>Arrive at the conference early, preferably at opening. This is very important
+if your talk is in the morning.</p>
+<p>This allows you to meet with the person managing the stage for final
+preparations: checking your slides, making sure all adapters are available,
+checking the microphone. It will also allow you to play through the motions
+before going on stage properly.</p>
+<p>Introduce yourself to the stage host and the master of ceremonies (MC). The
+host will take care of of timing, notify you when to prepare to go on stage and
+is your first point of contact. The master of ceremonies will introduce you on
+stage. Give the MC the most important facts needed for announcing you (what's
+your topic, the proper pronunciation of your name and your pronouns). If you
+have any nice anecdote you like being told as an introduction, say it! MCs work
+with jokes, so maybe figure out something together!</p>
+<p>If you have never given a talk before, here's a short run down of the process:
+please arrive to your talk early, preferably at least 15 minutes before. If
+your talk is the second of a set, get seated next to the stage entrance.</p>
+<p>If headset microphones are used, please be aware of the process of getting the
+microphone on, as this is a common source of stress. Preferably, have one of
+the persons handling the stage put it on. This has turned out to a stressful
+moment for unprepared people, as it involves light body contact in front of the
+audience. Make yourself aware that it is also stressful for the person handing
+you the microphone. Stand upright, don't move and make eye contact with the
+other person, clearly indicating that you are ready to go. The other person
+will talk you through the process and ask you for permission before touching
+you (&quot;may I put the receiver in that pocket?&quot;). At any point during the
+process, feel free to do things on your own. (&quot;No, I'd prefer to put it there
+myself.&quot;)
+Don't rush, the talk is not going to start without you.</p>
+<p>It is also fully acceptable to just choose a hand microphone.</p>
+<p>Familiarise yourself with the room layout, especially find out where your
+friends and the organisers are sitting. You might need them at some point.</p>
+<p>Treat yourself exceptionally well during the day. This is highly individual
+thing, so I'm just going to tell you my view on things:</p>
+<p>During the day, I recommend to eat lightly and not right before the talk. Stage
+fright is a thing and the body has the tendency to tell you that by having
+digestion issues. If you know you have a strong stomach, feel free to ignore
+that - if you never tried out, now is preferably not the best time to find out.
+Also, care about your water intake in the hours before the talk, stage thirst
+is worse then stage fright. Avoid acidic drinks.</p>
+<p>I usually pick the shirt I wear for the day specifically for the talk and bring
+that in a separate bag. Right before the talk starts, I go to the bathroom, get
+a bit of fresh water in my face and change. This is a ritual that works for me
+and makes me feel better and calmer right away.</p>
+<p>After the talk, stick around a little, people might have questions. It's
+appropriate to leave the after-talk discussions after some time, especially
+if you have to wind down. Point people to later opportunities to speak to you.
+Excusing yourself because you are stressed after the talk is fine. Feel free to
+skip later parts of the program if you feel unconcentrated after a talk.</p>
+<h2><a class="header" href="#your-time-on-stage" id="your-time-on-stage">Your time on stage</a></h2>
+<p>Once you are on stage, the room is all yours, except for:</p>
+<ul>
+<li>You ask someone to help you</li>
+<li>There are technical issues</li>
+<li>There is no mic stand and a fellow organiser acts as one (true story)</li>
+<li>You took too long</li>
+</ul>
+<p>Assuming you have prepared your talk, nothing will go wrong :).</p>
+<p>First of all, orient yourself and make sure you know where the organisers are
+sitting, again.</p>
+<p>Find some faces in the crowd you like and try to speak to them.</p>
+<p>If, against all odds, things do go wrong, internalize the following set of
+rules:</p>
+<ul>
+<li>Don't excuse yourself right after going on stage. You are as prepared as you
+are.</li>
+<li>Jokes are no way out of problematic situations and put you at risk of making
+things worse.</li>
+<li>Jokes are a great way out of happy little mistakes and blunders.</li>
+<li>If you say something you don't want to and its possibly something people
+might get angry about, excuse yourself immediately. People misspeak. People
+correct themselves. Train that in front of a mirror so that you have
+something handy if that happens.</li>
+</ul>
+<p>The last point isn't here for show. It happens regularly that people realise on
+stage that something they wrote and never read in a certain way is something
+very inappropriate when they are on stage. The best way out is a quick and
+direct &quot;never read it that way, I'm really sorry&quot;.</p>
+<p>Make pauses. Pauses are good for the audience and for you.</p>
+<p>Same goes for the question section: train some answers. Q&amp;A is a great part of
+a talk, but sometimes, you just don't know the answer. Questions can be
+inappropriate, missing the point or raise a topic that needs another 30
+minutes.
+Have standard reactions at hand:</p>
+<ul>
+<li>&quot;I don't know right away, I'd have to look that up.&quot;
+<ul>
+<li>That's fine, even if it is your own piece of software</li>
+</ul>
+</li>
+<li>&quot;I cannot answer that in a minute, can we discuss that later?&quot;</li>
+</ul>
+<p>On inappropriate questions, please feel free to state how you feel. If you feel
+like you don't have support, make eye contact with the stage host for
+reassurance.</p>
+<p>Your mentor will help you with all of those things.</p>
+<h2><a class="header" href="#constructing-a-talk" id="constructing-a-talk">Constructing a talk</a></h2>
+<p>I'm going to focus on the 25-30 minutes talks here. If you are an experienced
+speaker and have found your own talk format, feel free to ignore all of the
+below. If you are a new speaker, also feel free to change anything you want.
+Maybe someone else really inspired you with their way of constructing an
+argument. Note that construction and delivery is something different, a talk
+that is constructed in the same way can both be delivered as a funny talk or as
+a rant.</p>
+<p>I usually allocate the following for 25-30 minutes talks:</p>
+<ul>
+<li>Introduction of yourself (1 minute, preferably 30 seconds)</li>
+<li>Short overview of the problem solved</li>
+<li>Overview of the solution with hallmark features or findings</li>
+<li>Detailed overview with interesting findings</li>
+<li>Summary, outlook and review, reminding of the core ideas</li>
+</ul>
+<p>The introduction serves to establish your background and how you relate to the
+problem. For example, if you are not a developer but instead a user of the
+software you present, say so. Don't turn this into navel-gazing. If you have
+previous works and large projects of unrelated kinds, cut any mention of them
+short. Also make sure you mention Twitter and GitHub accounts briefly if you
+want people to find you.</p>
+<p>The next three topics merit about equal sizes of the rest of your talk. All
+should be somehow closed, like chapters in a book. Still, make sure you base
+things on each other. If you mention an aspect during the problem statement,
+make sure you will show a solution for it later. If you can't, it's probably
+better to leave that aspect out of your talk. Not every aspect has to run
+as a thread through the whole talk. For example, if you introduced a hallmark
+feature in the second part and it has a really interesting implementation
+detail, by all means, introduce that by the end, even if it doesn't
+specifically relate to the problem.</p>
+<p>Do not only talk about the positive parts. If you struggled with something,
+feel free to mention that.</p>
+<p>The final part allows you to both review the lessons learned, give outlook to
+the future and also bring points home that were <em>really</em> important. This can be
+as long or short as you want.</p>
+<p>Make sure you make a good argument for what you did or intend to do!</p>
+<h2><a class="header" href="#delivering-a-talk" id="delivering-a-talk">Delivering a talk</a></h2>
+<p>Delivery is important for an amazing talk. If you don't feel like you are great
+at delivery, that's also not bad. People are at this conference to learn about
+technology and will be fine if you get your point across properly.</p>
+<p>For that reason, if you feel like your talk is still missing something, it's
+probably not memes and jokes. Get back to the construction part. If you think
+your talk works well with a rather usual delivery, you may come back here.</p>
+<p>The most important part of delivery is connecting the dots you laid out for
+you in a fashion understandable to the listener. If something is based on
+something that came before, refer back to it verbally (&quot;Remember that our
+problem was connecting point A to point B through C?&quot;). If you have a key point,
+make sure you hit it.
+Train that. You don't have to have your whole talk in your head and can
+probably talk about your favourite topic for 20 minutes straight anyways, but
+key points should not to be missed.</p>
+<p>Your English skills will be a secondary matter. You have a story to tell and
+are an expert on your topic, people will appreciate you passing on knowledge.</p>
+<p>Also, as it is a recurring issue: if you intend to joke during your talk, make
+sure that you can deliver it well. Rehearse. People might still not get it, be
+prepared for that.</p>
+<p>On the topic of jokes, again: lighthearted talks are great and humor is cool.
+Mind that not everyone shares your sense of humor and you have 200 people in
+front of you.  If you joke backfires and people don't appreciate it, or at
+worst insults people, you have been warned. No &quot;I'm sorry if I offended you&quot;.
+This misstep is yours.</p>
+<p>So probably jokes about current social issues are out of line, especially on a
+tech conference. Still, this line isn't clear cut, always be mindful of the
+position you speak from.</p>
+<p>My usual recommendation here is to have jokes based on your subject matter. IT
+has a very special set up jokes. Finally an audience where you can make jokes
+about sending a UDP package from point A to point B over a point C and people
+might get it. Use that ability!</p>
+<p>Never overdo it though. If you are only starting out on stage, keep it low.</p>
+<p>Finally, swearing and curse-words. While we don't put any rules on their usage,
+please consider that some people find them off-putting. They might still fit
+your persona. Still, there lurks a danger here: if you can only make your point
+by using curse language, how strong is your point? Making strong statements
+without resorting to those tricks makes your statements more memorable. Also
+remember that cursing, especially about other peoples words, can quickly be
+disrespectful.</p>
+<p>In my experience from over 5 years of running conferences, the clearly-stated,
+well-constructed, well-spoken talks with a good measure of warmth and humor are
+the most remembered. Of the others, I remember only the jokes.</p>
+<h2><a class="header" href="#slide-design" id="slide-design">Slide design</a></h2>
+<p>As weird as it may sound, I don't have much input there. Have a look at some
+talks around the internet - maybe you are better at connecting visual dots like
+images (remember those that cannot see them). Maybe you prefer just putting
+claims on slides and deliver the arguments verbally. Experiment a little.</p>
+<p>Make sure that each slide is either transitioning between two of your important
+points or making one of those points, never both. Make sure you have some way
+to make clear where a topic begins and ends.</p>
+<p>There's tons of nice ways to create slides out there. Pick one that allows you
+to quickly iterate on slides and change things. You might have the best idea
+ever 50 minutes before the talk, it should be easy to make this happen.</p>
+<p>Don't design for later release of the slides.</p>
+<p>Add speaker notes for slides that are not clearly understandable, though, such
+as bare images.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="3-ableism.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="5-schedule.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="3-ableism.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="5-schedule.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
