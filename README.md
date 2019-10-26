@@ -2,8 +2,7 @@
 
 ## About this repo
 
-This repository contains the speakers guide we wrote and used for RustFest
-2016.
+This repository contains the speakers guide we wrote and used for all RustFest editions.
 We publish it for other conferences to adapt and use.
 
 The parts are enumerated.
@@ -50,9 +49,9 @@ link to https://github.com/RustFestEU/speakers-guide:
   To the extent possible under law,
   <a rel="dct:publisher"
      href="http://www.rustfest.eu/">
-    <span property="dct:title">RustFest 2016 Team</span></a>
+    <span property="dct:title">RustFest Team</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">RustFest 2016 Speakers Guide</span>.
+  <span property="dct:title">RustFest Speakers Guide</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="DE" about="http://www.rustfest.eu/">

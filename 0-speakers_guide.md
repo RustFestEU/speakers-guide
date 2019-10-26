@@ -1,7 +1,7 @@
 # RustFest speakers guide
 
-Hi fellow human! You are receiving this document because you are speaking at
-RustFest 2016 in Berlin. We are happy to have you on stage!
+Hi fellow human! You are receiving this document because you are speaking at RustFest.
+We are happy to have you on stage!
 
 Before we start: this is a guide, and while I will talk about recommended
 speech patterns, this is not a strict ruleset to follow. You know yourself
