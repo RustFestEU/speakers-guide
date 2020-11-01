@@ -18,6 +18,9 @@ speakers, the document is divided in sections.
 * [Ableism](3-ableism.md): RustFest does have a focus on being an
   accessible conference for people with disabilities and ableism is an
   often-forgotten topic when speaking to them. You should probably read this.
+* [Accessibility](3-accessibility.md):
+  Your talk and your slides should be accessible to as many people as possible.
+  We provide some tips and resources on things to look out for.
 * [Beginners](4-beginners.md): Many words for beginners. If you are
   experienced, you may or may not want to read this, too, but you are not the
   focus group of this.
